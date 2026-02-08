@@ -1,0 +1,164 @@
+# ===================================
+# Business Agency Website - .gitignore
+# ===================================
+
+# ===================================
+# Operating System Files
+# ===================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ===================================
+# Editor & IDE Files
+# ===================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+
+# JetBrains IDEs (IntelliJ, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ===================================
+# Dependencies & Packages
+# ===================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Bower
+bower_components/
+
+# Composer (PHP)
+vendor/
+composer.lock
+
+# ===================================
+# Build & Distribution
+# ===================================
+
+dist/
+build/
+out/
+.cache/
+
+# ===================================
+# Logs & Temporary Files
+# ===================================
+
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.temp
+*.cache
+
+# ===================================
+# Environment & Configuration
+# ===================================
+
+.env
+.env.local
+.env.*.local
+*.env
+config.local.*
+
+# ===================================
+# Testing & Coverage
+# ===================================
+
+coverage/
+.nyc_output/
+test-results/
+*.test.js.snap
+
+# ===================================
+# Documentation (Generated)
+# ===================================
+
+/api-docs/
+/doc/
+
+# ===================================
+# Backup Files
+# ===================================
+
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+# ===================================
+# Large Binary Files
+# ===================================
+
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Images (if not in assets/)
+*.psd
+*.ai
+*.sketch
+
+# ===================================
+# Misc
+# ===================================
+
+.sass-cache/
+.sync-data/

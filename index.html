@@ -2,301 +2,421 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css">
-    <title>Business Agency</title>
+    <meta name="description" content="Business Agency - Professional consulting, digital marketing, and strategy services to grow your business.">
+    <meta name="keywords" content="business, consulting, digital marketing, strategy, agency">
+    <meta name="author" content="Saadaoui Forkan">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Business Agency - Consulting & Digital Marketing">
+    <meta property="og:description" content="Transform your business with our expert consulting and digital marketing services.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- External CSS Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="assets/images/dark-bg.jpeg" as="image">
+    <link rel="preload" href="assets/images/about-us.mp4" as="video">
+
+    <title>Business Agency | Consulting & Digital Marketing</title>
 </head>
 <body>
-    <!-- navbar -->
-    <nav>
-        <div class="logo">
-            <span class="logo-child">L</span>
-            <span class="logo-child">O</span>
-            <span class="logo-child">G</span>
-            <span class="logo-child">O</span>
-        </div>
-        <div class="toggle-icon">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-        </div>
-        <div class="nav-list">
-            <a href="#section-1" class="nav-link">Home</a>
-            <a href="#section-2" class="nav-link">About</a>
-            <a href="#section-3" class="nav-link">Pricing</a>
-            <a href="#section-4" class="nav-link">Contact</a>
-        </div>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+
+    <!-- =============================================
+         NAVIGATION
+         ============================================= -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="#hero" class="navbar__logo" aria-label="Business Agency Home">
+            <span class="navbar__logo-letter">L</span>
+            <span class="navbar__logo-letter">O</span>
+            <span class="navbar__logo-letter">G</span>
+            <span class="navbar__logo-letter">O</span>
+        </a>
+
+        <button
+            class="navbar__toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="navbar-menu"
+            id="navbar-toggle">
+            <span class="navbar__toggle-line navbar__toggle-line--left" aria-hidden="true"></span>
+            <span class="navbar__toggle-line" aria-hidden="true"></span>
+            <span class="navbar__toggle-line navbar__toggle-line--right" aria-hidden="true"></span>
+        </button>
+
+        <ul class="navbar__menu" id="navbar-menu" role="menubar">
+            <li role="none"><a href="#hero" class="navbar__link" role="menuitem">Home</a></li>
+            <li role="none"><a href="#about" class="navbar__link" role="menuitem">About</a></li>
+            <li role="none"><a href="#pricing" class="navbar__link" role="menuitem">Pricing</a></li>
+            <li role="none"><a href="#contact" class="navbar__link" role="menuitem">Contact</a></li>
+        </ul>
     </nav>
-    <!-- end of navbar -->
 
-    <!-- start ==> first section -->
-    <section class="section-1" id="section-1">
-        <div class="banner-heading">
-            <h1 class="banner">Consulting</h1>
-            <h1 class="banner">Digital Marketing</h1>
-            <h1 class="banner">Strategy</h1>
-            <h1 class="banner">Business Ideas</h1>
-            <h1 class="banner">Creativity</h1>
-        </div>
-        <div class="banner-paragraph">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>   
-        </div>
-        <div class="banner-btn">
-            <button type="button">Discover Now</button>
-        </div>
-    </section>
-    <!-- end ==> first section -->
-
-    <!-- section-2 ==> about us -->
-    <section class="section-2" id="section-2">
-        <h1 class="section-heading">About Us</h1>
-        <div class="video-wrapper">
-            <video src="./images/about-us.mp4" poster="images/about.jpg"></video>
-            <div class="video-controls">
-                <!-- top side -->
-                <div class="progress-video">
-                    <input type="range" min="0" max="100" 
-                    class="input-progress-video" title="progress">
-                    <div class="time-hover">
-                        <span>00:01</span>
-                    </div>
-                </div>
-                <!-- bottom side -->
-                <div class="btn-player">
-                    <div class="play-pause">
-                        <i class="fa-solid fa-play"></i>
-                    </div>
-                    <div class="volume-voice">
-                        <div class="volume-icon" data-mute="false">
-                            <i class="fa-solid fa-volume-low"></i>
-                        </div>
-                        <input type="range" min="0" max="1" step="0.01"
-                        class="volume-progress" title="volume-progress">
-                    </div>
-                </div>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- =============================================
+             HERO SECTION
+             ============================================= -->
+        <section id="hero" class="hero" aria-label="Hero section">
+            <div class="hero__heading">
+                <h1 class="hero__title hero__title--active">Consulting</h1>
+                <h1 class="hero__title">Digital Marketing</h1>
+                <h1 class="hero__title">Strategy</h1>
+                <h1 class="hero__title">Business Ideas</h1>
+                <h1 class="hero__title">Creativity</h1>
             </div>
-        </div>
-        <div class="parag-wrapper">
-            <i class="fa-solid fa-quote-left"></i>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-               Tempora totam nam quasi officia, voluptatum deleniti provident
-               natus temporibus molestiae quae ratione fugit placeat voluptatibus, 
-               deserunt repellat dicta, optio quo quisquam libero tempore veritatis? 
-               Veritatis nam magnam omnis nobis iusto recusandae minus odit eligendi 
-               maxime dolorem, eos id! Fugiat, adipisci perspiciatis!</p>
-            <i class="fa-solid fa-quote-right"></i>
-            
-        </div>
-    </section>
-    <!-- end of section-2 -->
 
-    <!-- section 3 ==> Pricing -->
-    <section class="section-3" id="section-3">
-        <h1 class="section-heading">Pricing</h1>
-        <div class="pricing-cards-wrapper swiper">
-            <div class="swiper-wrapper">
-                <div class="pricing-card swiper-slide">
-                    <div class="pricing-card-front">
-                        <h2 class="pricing-card-heading heading-free">Free</h2>
-                        <h3 class="pricing-card-price">$0</h3>
-                        <ul class="pricing-card-list free-list">
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-xmark"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-xmark"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-xmark"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li> 
-                        </ul>
-                        <div class="pricing-card-btn btn-free">
-                            <button type="button">
-                                CHOOSE PLAN
+            <p class="hero__description">
+                <span class="hero__description-text">
+                    Transform your business with innovative strategies and expert guidance.
+                </span>
+            </p>
+
+            <div class="hero__cta">
+                <button type="button" class="hero__cta-btn" aria-label="Discover our services">
+                    Discover Now
+                </button>
+            </div>
+        </section>
+
+        <!-- =============================================
+             ABOUT SECTION
+             ============================================= -->
+        <section id="about" class="about" aria-label="About us section">
+            <h2 class="section-heading reveal">About Us</h2>
+
+            <div class="about__video-wrapper reveal">
+                <video
+                    class="about__video"
+                    src="assets/images/about-us.mp4"
+                    poster="assets/images/about.jpg"
+                    aria-label="About us video"
+                    preload="metadata">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="about__video-controls" role="group" aria-label="Video controls">
+                    <!-- Progress bar -->
+                    <div class="video-progress">
+                        <input
+                            type="range"
+                            min="0"
+                            max="100"
+                            class="video-progress__input"
+                            title="Video progress"
+                            aria-label="Video progress"
+                            value="0">
+                        <div class="video-progress__tooltip" aria-live="polite">
+                            <span>00:01</span>
+                        </div>
+                    </div>
+
+                    <!-- Control buttons -->
+                    <div class="video-controls">
+                        <button
+                            class="video-controls__btn video-controls__btn--play"
+                            aria-label="Play video"
+                            type="button">
+                            <i class="fa-solid fa-play" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="video-controls__volume">
+                            <button
+                                class="video-controls__btn video-controls__btn--volume"
+                                aria-label="Mute volume"
+                                type="button"
+                                data-muted="false">
+                                <i class="fa-solid fa-volume-low" aria-hidden="true"></i>
                             </button>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <div class="pricing-card swiper-slide">
-                    <div class="pricing-card-front">
-                        <h2 class="pricing-card-heading heading-basic">Basic</h2>
-                        <h3 class="pricing-card-price">$299</h3>
-                        <ul class="pricing-card-list basic-list">
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-xmark"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-xmark"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li> 
-                        </ul>
-                        <div class="pricing-card-btn btn-basic">
-                            <button type="button">
-                                CHOOSE PLAN
-                            </button>
+                            <input
+                                type="range"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                class="video-controls__volume-slider"
+                                title="Volume"
+                                aria-label="Volume control"
+                                value="1">
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="pricing-card swiper-slide">
-                    <div class="pricing-card-front">
-                        <h2 class="pricing-card-heading heading-standard">Standard</h2>
-                        <h3 class="pricing-card-price">$699</h3>
-                        <ul class="pricing-card-list standard-list">
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-xmark"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li> 
-                        </ul>
-                        <div class="pricing-card-btn btn-standard">
-                            <button type="button">
-                                CHOOSE PLAN
-                            </button>
+            <blockquote class="about__quote reveal">
+                <i class="about__quote-icon fa-solid fa-quote-left" aria-hidden="true"></i>
+                <p class="about__quote-text">
+                    We are passionate about helping businesses achieve their full potential through innovative strategies,
+                    expert guidance, and cutting-edge digital solutions. Our team of experienced professionals is dedicated
+                    to delivering measurable results that drive growth and success.
+                </p>
+                <i class="about__quote-icon about__quote-icon--right fa-solid fa-quote-right" aria-hidden="true"></i>
+            </blockquote>
+        </section>
+
+        <!-- =============================================
+             PRICING SECTION
+             ============================================= -->
+        <section id="pricing" class="pricing" aria-label="Pricing plans section">
+            <h2 class="section-heading reveal">Pricing Plans</h2>
+
+            <div class="pricing__cards-wrapper swiper reveal">
+                <div class="swiper-wrapper">
+                    <!-- Free Plan -->
+                    <article class="pricing__card swiper-slide" aria-labelledby="pricing-free">
+                        <div class="pricing__card-content">
+                            <h3 id="pricing-free" class="pricing__card-header pricing__card-header--free">Free</h3>
+                            <p class="pricing__card-price">$0</p>
+                            <ul class="pricing__card-list" aria-label="Free plan features">
+                                <li class="pricing__card-item pricing__card-item--free">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Basic consultation</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--free">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Email support</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--free">
+                                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                                    <span>Priority support</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--free">
+                                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                                    <span>Custom strategy</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--free">
+                                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                                    <span>Advanced analytics</span>
+                                </li>
+                            </ul>
+                            <div class="pricing__card-btn pricing__card-btn--free">
+                                <button type="button">Choose Plan</button>
+                            </div>
                         </div>
-                    </div>
+                    </article>
+
+                    <!-- Basic Plan -->
+                    <article class="pricing__card swiper-slide" aria-labelledby="pricing-basic">
+                        <div class="pricing__card-content">
+                            <h3 id="pricing-basic" class="pricing__card-header pricing__card-header--basic">Basic</h3>
+                            <p class="pricing__card-price">$299</p>
+                            <ul class="pricing__card-list" aria-label="Basic plan features">
+                                <li class="pricing__card-item pricing__card-item--basic">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Basic consultation</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--basic">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Email support</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--basic">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Priority support</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--basic">
+                                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                                    <span>Custom strategy</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--basic">
+                                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                                    <span>Advanced analytics</span>
+                                </li>
+                            </ul>
+                            <div class="pricing__card-btn pricing__card-btn--basic">
+                                <button type="button">Choose Plan</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Standard Plan -->
+                    <article class="pricing__card swiper-slide" aria-labelledby="pricing-standard">
+                        <div class="pricing__card-content">
+                            <h3 id="pricing-standard" class="pricing__card-header pricing__card-header--standard">Standard</h3>
+                            <p class="pricing__card-price">$699</p>
+                            <ul class="pricing__card-list" aria-label="Standard plan features">
+                                <li class="pricing__card-item pricing__card-item--standard">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Basic consultation</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--standard">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Email support</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--standard">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Priority support</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--standard">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Custom strategy</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--standard">
+                                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                                    <span>Advanced analytics</span>
+                                </li>
+                            </ul>
+                            <div class="pricing__card-btn pricing__card-btn--standard">
+                                <button type="button">Choose Plan</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Premium Plan -->
+                    <article class="pricing__card swiper-slide" aria-labelledby="pricing-premium">
+                        <div class="pricing__card-content">
+                            <h3 id="pricing-premium" class="pricing__card-header pricing__card-header--premium">Premium</h3>
+                            <p class="pricing__card-price">$999</p>
+                            <ul class="pricing__card-list" aria-label="Premium plan features">
+                                <li class="pricing__card-item pricing__card-item--premium">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Basic consultation</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--premium">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Email support</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--premium">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Priority support</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--premium">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Custom strategy</span>
+                                </li>
+                                <li class="pricing__card-item pricing__card-item--premium">
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <span>Advanced analytics</span>
+                                </li>
+                            </ul>
+                            <div class="pricing__card-btn pricing__card-btn--premium">
+                                <button type="button">Choose Plan</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================
+             CONTACT SECTION
+             ============================================= -->
+        <section id="contact" class="contact" aria-label="Contact section">
+            <h2 class="section-heading reveal">Get In Touch</h2>
+
+            <div class="contact__info reveal">
+                <div class="contact__info-item">
+                    <i class="contact__info-icon fa-solid fa-mobile-screen" aria-hidden="true"></i>
+                    <h3 class="contact__info-title">Phone</h3>
+                    <p class="contact__info-text">
+                        <a href="tel:+21622000111">+216 22 000 111</a><br>
+                        <a href="tel:+21699000111">+216 99 000 111</a>
+                    </p>
                 </div>
 
-                <div class="pricing-card swiper-slide">
-                    <div class="pricing-card-front">
-                        <h2 class="pricing-card-heading heading-premium">Premium</h2>
-                        <h3 class="pricing-card-price">$999</h3>
-                        <ul class="pricing-card-list premium-list">
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>    
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <span>Lorem ipsum dolor</span>
-                            </li>      
-                        </ul>
-                        <div class="pricing-card-btn btn-premium">
-                            <button type="button">
-                                CHOOSE PLAN
-                            </button>
-                        </div>
-                    </div>
+                <div class="contact__info-item">
+                    <i class="contact__info-icon fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <h3 class="contact__info-title">Address</h3>
+                    <p class="contact__info-text">
+                        Main Street #123<br>
+                        Wall Street #123
+                    </p>
+                </div>
 
+                <div class="contact__info-item">
+                    <i class="contact__info-icon fa-regular fa-envelope" aria-hidden="true"></i>
+                    <h3 class="contact__info-title">Email</h3>
+                    <p class="contact__info-text">
+                        <a href="mailto:support@gmail.com">support@gmail.com</a><br>
+                        <a href="mailto:support@outlook.com">support@outlook.com</a>
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- end of section 3 -->
 
-    <!-- section 4 => section contact -->
-    <section class="section-4" id="section-4">
-        <h1 class="section-heading">
-            Contact
-        </h1>
-        <div class="contact-wrapper">
-            <div class="contact-phone">
-                <i class="fas fa-mobile-alt"></i>
-                <h4>Phone</h4>
-                <p class="parag">+21622000111<br>+21699000111</p>
-            </div>
-            <div class="contact-address">
-                <i class="fas fa-map-marker-alt"></i>
-                <h4>Address</h4>
-                <p class="parag">Main street #123<br>Wall street #123</p>
-            </div>
-            <div class="contact-mail">
-                <i class="far fa-envelope"></i>
-                <h4>Email</h4>
-                <p class="parag">support@gmail.com<br>support@outlook.com</p>
-            </div>
-        </div>
-        <div class="contact-form">
-            <h3>GET IN TOUCH</h3>
-            <form action="">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Email">
-                <input type="text" placeholder="Your Message">
-                <input type="submit" value="send message">
-            </form>
-        </div>
-    </section>
-    <!-- end of section 4 -->
+            <div class="contact__form-wrapper reveal">
+                <h3 class="contact__form-title">Send Us a Message</h3>
+                <form class="contact__form" action="#" method="POST" aria-label="Contact form">
+                    <label for="contact-name" class="sr-only">Your Name</label>
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                        aria-required="true">
 
-    <!-- footer -->
-    <footer>
-        <div class="links">
-            <a href="#section-1">Home</a>
-            <a href="#section-2">About</a>
-            <a href="#section-3">Pricing</a>
-            <a href="#section-4">Contact</a>
+                    <label for="contact-email" class="sr-only">Your Email</label>
+                    <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                        aria-required="true">
+
+                    <label for="contact-message" class="sr-only">Your Message</label>
+                    <input
+                        type="text"
+                        id="contact-message"
+                        name="message"
+                        placeholder="Your Message"
+                        required
+                        aria-required="true">
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- =============================================
+         FOOTER
+         ============================================= -->
+    <footer class="footer" role="contentinfo">
+        <nav class="footer__links" aria-label="Footer navigation">
+            <a href="#hero" class="footer__link">Home</a>
+            <a href="#about" class="footer__link">About</a>
+            <a href="#pricing" class="footer__link">Pricing</a>
+            <a href="#contact" class="footer__link">Contact</a>
+        </nav>
+
+        <div class="footer__icons">
+            <a href="tel:+21622000111" class="footer__icon" aria-label="Call us">
+                <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="footer__icon" aria-label="Our location">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:support@gmail.com" class="footer__icon" aria-label="Email us">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            </a>
         </div>
-        <div class="addresses">
-            <i class="fas fa-mobile-alt footer-icon"></i>
-            <i class="fas fa-map-marker-alt footer-icon"></i>
-            <i class="far fa-envelope footer-icon"></i>
-        </div>
-        <div class="copyright">
-            <h5>SaadaouiForkan © All rights reserved</h5>
-        </div>
+
+        <p class="footer__copyright">
+            <small>&copy; <span id="current-year"></span> Saadaoui Forkan. All rights reserved.</small>
+        </p>
     </footer>
-    <!-- end of footer -->
 
+    <!-- External Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
